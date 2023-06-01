@@ -2,7 +2,8 @@
 #include "../TDD/test_02.cpp"
 
 
-TEST(PrimeFactorTC, primefactor_00) {
-	EXPECT_EQ(1, 1);
-	
+TEST(PrimeFactorTC, Of1) {
+	PrimeFactor prime_factor;
+	std::vector<int> expected = {};
+	EXPECT_EQ(expected, prime_factor.of(1));
 }
